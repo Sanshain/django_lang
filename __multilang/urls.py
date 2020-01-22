@@ -15,8 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf.urls.i18n import i18n_patterns
+
+
+##i18n_urls = (
+##    url(r'^admin/', include(admin.site.urls)),
+##    url(r'^i18n/', include('django.conf.urls.i18n')),
+##)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('prime.urls')),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
+
+##urlpatterns.extend(i18n_patterns(*i18n_urls, prefix_default_language=False))
