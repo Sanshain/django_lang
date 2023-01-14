@@ -1,3 +1,1 @@
-# django_lang
-
-Django localization example
+**Django localization example**
