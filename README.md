@@ -1,1 +1,1 @@
-# Django localization example
+## Django localization example
